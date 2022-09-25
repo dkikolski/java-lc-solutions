@@ -1,7 +1,8 @@
 package dev.dkikolski.lc.solutions;
 
-import java.util.Arrays;
+import dev.dkikolski.lc.tags.Easy;
 
+@Easy
 @SuppressWarnings("SpellCheckingInspection")
 final class P0027RemoveElementSolution {
 
