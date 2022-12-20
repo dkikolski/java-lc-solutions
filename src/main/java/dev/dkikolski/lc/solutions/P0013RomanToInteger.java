@@ -8,7 +8,7 @@ public class P0013RomanToInteger {
     private P0013RomanToInteger() {
     }
 
-    public static int romanToInt(String s) {
+    public static int romanToInt(final String s) {
         int result = 0;
         int prev = 0;
         for (int i = s.length() - 1; i >= 0; i--) {

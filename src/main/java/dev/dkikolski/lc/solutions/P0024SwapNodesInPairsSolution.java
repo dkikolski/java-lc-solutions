@@ -9,7 +9,7 @@ final class P0024SwapNodesInPairsSolution {
     private P0024SwapNodesInPairsSolution() {
     }
 
-    public static ListNode swapPairs(ListNode head) {
+    public static ListNode swapPairs(final ListNode head) {
         final ListNode fakeHead = new ListNode( 0, head);
         ListNode prev = fakeHead;
         ListNode current = head;

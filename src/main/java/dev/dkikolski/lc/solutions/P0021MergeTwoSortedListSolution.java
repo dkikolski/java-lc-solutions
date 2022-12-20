@@ -8,7 +8,7 @@ import dev.dkikolski.lc.tags.LinkedList;
 @LinkedList
 final class P0021MergeTwoSortedListSolution {
 
-    public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+    public static ListNode mergeTwoLists(final ListNode list1, final ListNode list2) {
         var a = list1;
         var b = list2;
         var result = new ListNode();

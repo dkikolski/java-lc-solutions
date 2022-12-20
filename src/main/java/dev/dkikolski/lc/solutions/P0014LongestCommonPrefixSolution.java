@@ -8,7 +8,7 @@ final class P0014LongestCommonPrefixSolution {
     private P0014LongestCommonPrefixSolution() {
     }
 
-    public static String longestCommonPrefix(String[] strs) {
+    public static String longestCommonPrefix(final String[] strs) {
         String longest = strs[0];
         for (String s : strs) {
             while(!s.startsWith(longest)) {

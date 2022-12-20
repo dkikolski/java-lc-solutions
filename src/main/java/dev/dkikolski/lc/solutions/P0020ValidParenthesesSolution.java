@@ -10,7 +10,7 @@ final class P0020ValidParenthesesSolution {
     private P0020ValidParenthesesSolution() {
     }
 
-    public static boolean isValid(String s) {
+    public static boolean isValid(final String s) {
         final var queue = new LinkedList<Character>();
         for (char c : s.toCharArray()) {
             if (c == '(') {

@@ -12,7 +12,7 @@ final class P0015ThreeSumSolution {
     private P0015ThreeSumSolution() {
     }
 
-    public static List<List<Integer>> threeSum(int[] nums) {
+    public static List<List<Integer>> threeSum(final int[] nums) {
         final var result = new LinkedList<List<Integer>>();
         Arrays.sort(nums);
 

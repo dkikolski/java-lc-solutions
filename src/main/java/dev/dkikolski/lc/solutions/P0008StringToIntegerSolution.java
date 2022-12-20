@@ -7,7 +7,7 @@ final class P0008StringToIntegerSolution {
 
     private P0008StringToIntegerSolution() {}
 
-    public static int myAtoi(String s) {
+    public static int myAtoi(final String s) {
         int sign = 1;
         int acc = 0;
         boolean numsParsed = false;

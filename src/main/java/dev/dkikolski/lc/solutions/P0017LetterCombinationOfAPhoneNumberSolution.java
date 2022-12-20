@@ -43,7 +43,7 @@ final class P0017LetterCombinationOfAPhoneNumberSolution {
         }
         final var head = digits.charAt(0);
         final var characters = mapping.get(head);
-        for (final Character c : characters) {
+        for (final var c : characters) {
             letterCombinations(digits.substring(1), current + c, acc);
         }
     }

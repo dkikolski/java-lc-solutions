@@ -4,7 +4,7 @@ import dev.dkikolski.lc.tags.Medium;
 
 @Medium
 public class P0031NextPermutationSolution {
-    public static void nextPermutation(int[] nums) {
+    public static void nextPermutation(final int[] nums) {
         final int len = nums.length;
         int i = len - 2;
         while(i >= 0 && nums[i] >= nums[i+1]) {

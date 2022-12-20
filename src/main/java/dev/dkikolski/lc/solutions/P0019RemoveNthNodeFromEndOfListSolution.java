@@ -8,7 +8,7 @@ import dev.dkikolski.lc.tags.Medium;
 @LinkedList
 public class P0019RemoveNthNodeFromEndOfListSolution {
 
-    public static ListNode removeNthFromEnd(ListNode head, int n) {
+    public static ListNode removeNthFromEnd(final ListNode head, final int n) {
         var size = 0;
         var currentNode = head;
         while(currentNode != null) {

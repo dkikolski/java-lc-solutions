@@ -10,7 +10,7 @@ import java.util.List;
 @DynamicProgramming
 final class P0022GenerateParenthesesSolution {
 
-    private P0022GenerateParenthesesSolution(){
+    private P0022GenerateParenthesesSolution() {
     }
 
     public static List<String> generateParenthesis(int n) {
@@ -19,14 +19,14 @@ final class P0022GenerateParenthesesSolution {
         return acc;
     }
 
-    private static void generateParenthesis(int lefts, int rights, final String current, final List<String> acc) {
+    private static void generateParenthesis(final int lefts, final int rights, final String current, final List<String> acc) {
         if (lefts > 0) {
             generateParenthesis(lefts - 1, rights, current + "(", acc);
         }
         if (rights > lefts) {
             generateParenthesis(lefts, rights - 1, current + ")", acc);
         }
-        if (lefts == 0 && rights == 0){
+        if (lefts == 0 && rights == 0) {
             acc.add(current);
         }
     }

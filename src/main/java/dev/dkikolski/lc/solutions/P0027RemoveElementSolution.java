@@ -21,9 +21,10 @@ final class P0027RemoveElementSolution {
         return icurrent;
     }
 
-    /*
+
+    // Alternative solution
     // with swapping elements
-    public static int removeElement(final int[] nums, final int val) {
+    public static int removeElementWithSwapping(final int[] nums, final int val) {
         int ibegin = 0;
         int iend = nums.length - 1;
 
@@ -44,5 +45,4 @@ final class P0027RemoveElementSolution {
         nums[ibegin] = nums[iend];
         nums[iend] = temp;
     }
-    */
 }
